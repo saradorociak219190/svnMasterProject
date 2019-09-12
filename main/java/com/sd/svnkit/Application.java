@@ -19,7 +19,7 @@ public class Application {
         RandomBytesProvider randomBytesProvider = new RandomBytesProvider();
 
         String repositoryUri = "http://DESKTOP-QOVLI62/svn/testRepository";
-        SvnKitManager svnKitManager = SvnKitManager.connect(URI.create(repositoryUri), "saradorociak", "Przyjaciele95");
+        SvnKitManager svnKitManager = SvnKitManager.connect(URI.create(repositoryUri), "saradorociak", "password");
         FilesGenerator filesGenerator = new FilesGenerator(svnKitManager, randomBytesProvider);
 
         svnKitManager.commitEmptyFolder("trunk");
